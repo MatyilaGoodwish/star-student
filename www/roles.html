@@ -1,0 +1,45 @@
+<ons-page id="roles">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+        <div class="center">
+            Roles
+        </div>
+
+
+    </ons-toolbar>
+
+    
+    <div style="padding:2em">
+            <h5>What's your role?</h5>
+            <p>
+                Enter your first and lastname
+            </p>
+            <p>
+                <ons-input type="text" class="input-100" id="role-full-names"
+                    modifier="underbar" placeholder="Your Full Names">
+                </ons-input>
+            </p>
+
+            <br/>
+            <h5>Choose Role</h5>
+            <p>Select your role</p>
+            <br/>
+            <ons-select modifier="large" style="width:100%" id="role-current-role">
+                <option value="student">
+                    Student
+                </option>
+                <option value="tutor">
+                    Tutor
+                </option>
+            </ons-select>
+
+            <p>
+                <br/>
+                <ons-button onclick="Roles.Update()" modifier="large">
+                    Add Role
+                </ons-button>
+            </p>
+        </div>
+</ons-page>

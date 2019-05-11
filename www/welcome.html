@@ -1,0 +1,33 @@
+<ons-page id="welcome">
+        <ons-toolbar>
+            <div class="center">
+                    <img src="images/mortar.png" width="16" /> Star Student
+            </div>
+            <div class="right">
+                    <ons-toolbar-button onclick="Welcome.Add()">
+                        <ons-icon icon="md-plus" modifier="material"></ons-icon>
+                    </ons-toolbar-button>
+                </div>
+        </ons-toolbar>
+
+        <div style="padding:3em;justify-content: center;text-align: center">
+           
+            <img src="images/mortar.png" width="60%" />
+            <h5>Star Student of the Day</h5>
+            <span id="student-of-the-day"></span>
+            <p>Keep your student work flowing to be the star student.</p>
+        
+            <p>
+                <ons-button
+                 modifier="large"
+                 onclick="Roles.Activities()"
+                 >View Activities</ons-button>
+            </p>
+            <p>
+                    <ons-button 
+                    modifier="large"
+                    onclick="Roles.Choose()"
+                    >My Profile</ons-button>
+             </p>
+        </div>
+</ons-page>

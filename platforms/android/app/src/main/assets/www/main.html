@@ -1,0 +1,56 @@
+<ons-page id="main" ng-controller="main">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button>
+                <ons-back-button></ons-back-button>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">
+            Add Subject
+        </div>
+    </ons-toolbar>
+
+    <div style="justify-content: left;text-align:left;padding:2em;">
+
+            <p>
+                <h5>Work or Study</h5>
+                <p>
+                    Type in the school subject
+                </p>
+                <br/>
+                <ons-input class="input-100"
+                    modifier="underbar"
+                    id="subject"
+                    placeholder="Name of Subject"
+                    type="text">
+                </ons-input>
+            </p>
+
+
+            <p>
+                    <h5>Due Date</h5>
+                    <p>
+                        When is the due date?
+                    </p>
+                    <br/>
+                    <ons-input class="input-100"
+                        modifier="material"
+                        id="date"
+                        type="date">
+                    </ons-input>
+                </p>
+
+            <p>
+                <br/>
+                    <ons-button 
+                        modifier="cta"
+                        onclick="Welcome.AddSubject()"
+                    >
+                    Add Subject
+                    </ons-button>
+                </p>
+                
+ 
+    </div>
+  
+</ons-page>

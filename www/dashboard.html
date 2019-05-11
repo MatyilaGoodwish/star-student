@@ -1,0 +1,23 @@
+<ons-page id="dashboard">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button onclick="Logout.SignOut()">
+                Logout
+            </ons-toolbar-button>
+        </div>
+        <div class="center">
+                Dashboard
+        </div>
+        <div class="right">
+            <ons-toolbar-button onclick="Task.Create()">
+                New Task
+            </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <div style="padding:2em">
+        <div id="tasks">
+            <ons-button onclick="Task.Pull()" modifier="large">View Tasks</ons-button>
+        </div>
+    </div>
+</ons-page>

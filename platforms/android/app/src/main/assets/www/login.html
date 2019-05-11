@@ -1,0 +1,33 @@
+<ons-page id="login">
+    <ons-toolbar>
+        <div class="left">
+            <ons-back-button></ons-back-button>
+        </div>
+        <div class="center">
+            Login
+        </div>
+        <div class="right">
+           <ons-toolbar-button onclick="Account.Registrations()">
+               Register
+           </ons-toolbar-button>
+        </div>
+    </ons-toolbar>
+
+    <div style="padding:2em">
+        <p>
+            <h5>Email Address</h5>
+            
+            <br/>
+            <ons-input id="email" type="email" placeholder="Email address"   modifier="underbar" class="input-100"></ons-input>
+            <br/>
+            <br/>
+            <h5>Password</h5>
+                
+                <br/>
+                <ons-input type="password" id="password"  modifier="underbar" class="input-100"></ons-input>
+          
+                <br/> <br/>
+                <ons-button onclick="Account.Login()"  modifier="large">Login</ons-button>
+            </p>
+    </div>
+</ons-page>

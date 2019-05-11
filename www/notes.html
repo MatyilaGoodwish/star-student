@@ -1,0 +1,52 @@
+<ons-page id="notes">
+    <ons-toolbar>
+        <div class="left">
+            <ons-toolbar-button>
+                <ons-back-button></ons-back-button>
+            </ons-toolbar-button>
+        </div>
+        <div class="center">
+            Details
+        </div>
+
+      
+    </ons-toolbar>
+
+    <div style="justify-content: left;padding:2em;text-align: left;">
+            <p>
+                <h5>School Activity</h5>
+                <p>
+                    What type of school activity?
+                </p>
+                <ons-select modifier="large" class="input-100" id="schoolActivity">
+                   <option>Homework</option>
+                   <option>Assignment</option>
+                   <option>Group Activity</option>
+                   <option>Classroom Activity</option>
+                   <option>Test Practise</option>
+                   <option>Exam</option>
+                </ons-select>
+            </p>
+            <br/>
+            <p>
+                 <h5>Task Status</h5>
+                 <p>
+                     Set the status of the school project:
+                 </p>
+                    <ons-select  modifier="large" class="input-100" id="taskStatus">
+                       <option>Pending</option>
+                       <option>Completed</option>
+                       <option>Deferred</option>
+                    </ons-select>
+            </p>
+
+            <p>
+                    <br/>
+                <ons-button modifier="large"
+                onclick="Welcome.AddProject()"
+                >
+                    Add School Project
+                </ons-button>
+            </p>
+        </div>
+</ons-page>
